@@ -1,1 +1,11 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  background-color: #f9fafe;
+  font-family: "Poppins", sans-serif;
+  color: #20244f;
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  color: #808286;
+}/*# sourceMappingURL=style.css.map */
