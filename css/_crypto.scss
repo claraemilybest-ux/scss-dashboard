@@ -1,0 +1,27 @@
+@use 'index' as v;
+
+.cryptos{
+    display: flex;
+}
+.crypto-card{
+    width: 25%;
+
+    hr{
+        width: 90%;
+        border: none;
+        border-top: 5px solid v.$accent;
+        margin: 10px 0;
+    }
+    h3, p{
+        margin: 5px;
+    }
+    h3{
+        color:v.$secondary-font;
+        font-weight:normal;
+        font-size: 15px;
+    }
+    p{
+        font-size: 20px;
+        color: v.$primary-font;
+    }
+}

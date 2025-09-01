@@ -1,0 +1,35 @@
+@use 'index' as v;
+
+header {
+  background-color: v.$secondary;
+  padding: 20px;
+  
+  button{
+    position: absolute; /* Position the button absolutely */
+    right: 0; /* Align to the right edge of the container */
+    top: 50%; /* Vertically center the button */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    padding: 8px 15px;
+    border: none;
+    background-color: #007bff; /* Example button background color */
+    color: white; /* Example button text color */
+    border-radius: 0 25px 25px 0; /* Rounded corners only on the right */
+    cursor: pointer;
+  }
+}
+.searching {
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+    border: 1px solid #ccc;
+    border-radius: 25px; 
+    overflow: hidden;
+}
+input[type="text"] {
+    flex-grow: 1; /* Allows the input to take up available space */
+    padding: 10px 15px;
+    border: none; /* Remove default input border */
+    outline: none; /* Remove outline on focus */
+    background-color: transparent;
+    border-radius: 5px;
+}

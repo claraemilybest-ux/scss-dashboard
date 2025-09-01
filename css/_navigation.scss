@@ -1,0 +1,28 @@
+@use 'index' as v;
+nav{
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+  background-color: v.$secondary;
+  width: 100%;
+  max-width: 200px;
+  .logo{
+    
+  }
+  hr{
+    border: none;
+    border-top: 2px solid v.$primary;
+    margin: 10px 0;
+
+  }
+  a{
+    color: v.$secondary-font;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+
+    &:hover{
+      background-color: v.$primary;
+    }
+  }
+}

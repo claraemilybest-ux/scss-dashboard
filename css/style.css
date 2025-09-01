@@ -1,11 +1,124 @@
-body {
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 200px;
+}
+nav hr {
+  border: none;
+  border-top: 2px solid #f9fafe;
+  margin: 10px 0;
+}
+nav a {
+  color: #808286;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+nav a:hover {
   background-color: #f9fafe;
-  font-family: "Poppins", sans-serif;
-  color: #20244f;
-  margin: 0;
-  padding: 0;
 }
 
-h2, p {
+header {
+  background-color: #fff;
+  padding: 20px;
+}
+header button {
+  position: absolute; /* Position the button absolutely */
+  right: 0; /* Align to the right edge of the container */
+  top: 50%; /* Vertically center the button */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+  padding: 8px 15px;
+  border: none;
+  background-color: #007bff; /* Example button background color */
+  color: white; /* Example button text color */
+  border-radius: 0 25px 25px 0; /* Rounded corners only on the right */
+  cursor: pointer;
+}
+
+.searching {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+input[type=text] {
+  flex-grow: 1; /* Allows the input to take up available space */
+  padding: 10px 15px;
+  border: none; /* Remove default input border */
+  outline: none; /* Remove outline on focus */
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.balance {
+  display: flex;
+  margin-bottom: 30px;
+}
+.balance h3, .balance p {
+  margin: 2px;
+}
+.balance h3 {
   color: #808286;
+  font-weight: normal;
+}
+.balance p {
+  font-size: 24px;
+  color: #20244f;
+}
+
+.bal-card {
+  width: 25%;
+}
+
+.cryptos {
+  display: flex;
+}
+
+.crypto-card {
+  width: 25%;
+}
+.crypto-card hr {
+  width: 90%;
+  border: none;
+  border-top: 5px solid #fe9f44;
+  margin: 10px 0;
+}
+.crypto-card h3, .crypto-card p {
+  margin: 5px;
+}
+.crypto-card h3 {
+  color: #808286;
+  font-weight: normal;
+  font-size: 15px;
+}
+.crypto-card p {
+  font-size: 20px;
+  color: #20244f;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: sans-serif;
+}
+
+.right {
+  width: 100%;
+}
+
+main {
+  background-color: #f9fafe;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

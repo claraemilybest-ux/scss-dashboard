@@ -1,12 +1,25 @@
-@use 'variables' as v;
+@use 'index' as v;
+@use 'navigation';
+@use 'header';
+@use 'balance';
+@use 'crypto';
 
 body {
-  background-color: v.$primary;
-  font-family: 'Poppins', sans-serif;
-  color: v.$primary-font;
   margin: 0;
   padding: 0;
+  display: flex;
+  font-family: sans-serif;
 }
-h2, p{
-    color: v.$secondary-font;
+
+.right{
+  width: 100%;
+}
+main{
+  background-color: v.$primary;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
 }

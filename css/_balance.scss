@@ -1,0 +1,20 @@
+@use 'index' as v;
+
+.balance{
+    display: flex;
+    margin-bottom: 30px;
+    h3, p{
+        margin: 2px;
+    }
+    h3{
+        color:v.$secondary-font;
+        font-weight:normal;
+    }
+    p{
+        font-size: 24px;
+        color: v.$primary-font;
+    }
+}
+.bal-card{
+    width: 25%;
+}
