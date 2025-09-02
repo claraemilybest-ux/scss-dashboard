@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboards</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <nav>
-        <div class="logo">LOGO</div>
+        <div class="logo"><img src="/images/logo.png">Extej</div>
         <span>PAGES</span>
         <a href="#">Markets</a>
         <a href="#">Trading</a>
@@ -17,7 +18,7 @@
         <a href="#">Vaults</a>
         <a href="#">Portfolio</a>
         <a href="#">Liqudity pools</a>
-        <a href="#">Swap</a>
+        <a href="/next-page.html">Swap</a>
 
         <hr>
         <span>UI ELEMENTS</span>
@@ -40,12 +41,23 @@
             <div class="searching">
             <form action="/search" method="GET">
                 <input type="text" name="query" placeholder="Search">
-                <button type="submit">Go</button>
+                <button type="submit"><i class="fa fa-search"></i></button>
             </form>
             </div>
             <div class="user">
-            <a href="#" class="notification">🔔</a>
-            <a href="#" class="mail">✉️</a>
+                <a href="#" class="notification"><i class="fa fa-bell"></i></a>
+                <a href="#" class="mail"><i class="fa fa-envelope"></i></a>
+                <img src="/images/user-icon.png" alt="Profile Picture">
+                <div class="profile">
+                    <h3>Austin Robertson</h3>
+                    <p>Marketing Administrator</p>
+                    
+                </div>
+                <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+                </label>
+                <img src="/images/uk-icon.png" alt="UK Flag">
             </div>
         </header>
     <main>
@@ -69,22 +81,22 @@
 
         <section class="cryptos">
             <div class="crypto-card">
-                <hr>
+                <hr class="hr1">
                 <h3>Bitcoin</h3>
                 <p>$50,156.01</p>
             </div>
             <div class="crypto-card">
-                <hr>
+                <hr class="hr2">
                 <h3>Ethereum</h3>
                 <p>$38,903.45</p>
             </div>
             <div class="crypto-card">
-                <hr>
+                <hr class="hr3">
                 <h3>Binance Coin</h3>
                 <p>$26,101.01</p>
             </div>
             <div class="crypto-card">
-                <hr>
+                <hr class="hr4">
                 <h3>Ripple</h3>
                 <p>$14,247.60</p>
             </div>
