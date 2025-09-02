@@ -197,23 +197,25 @@ input:checked + .slider:before {
 .crypto-card {
   width: 25%;
 }
-.crypto-card hr {
+.crypto-card .hr1 {
   width: 90%;
-  border: none;
-  border-top: 5px solid;
+  border: 3px solid #fe9f44;
   margin: 10px 0;
 }
-.crypto-card .hr1 {
-  border-color: #fe9f44;
-}
 .crypto-card .hr2 {
-  border-color: #6182e2;
+  width: 90%;
+  border: 3px solid #6182e2;
+  margin: 10px 0;
 }
 .crypto-card .hr3 {
-  border-color: #e9bd15;
+  width: 90%;
+  border: 3px solid #e9bd15;
+  margin: 10px 0;
 }
 .crypto-card .hr4 {
-  border-color: #0387f3;
+  width: 90%;
+  border: 3px solid #0387f3;
+  margin: 10px 0;
 }
 .crypto-card h3, .crypto-card p {
   margin: 5px;

@@ -1,28 +1,27 @@
 @use 'index' as v;
-
+@mixin hr-color($color) {
+    width: 90%;
+    border: 3px solid $color;
+    margin: 10px 0;
+}
 .cryptos{
     display: flex;
 }
 .crypto-card{
     width: 25%;
 
-    hr{
-        width: 90%;
-        border: none;
-        border-top: 5px solid ;
-        margin: 10px 0;
-    }
     .hr1{
-        border-color: v.$accent1;
+        @include hr-color(v.$accent1);
     }
     .hr2{
-        border-color: v.$accent2;
+        @include hr-color(v.$accent2);
     }
     .hr3{
-        border-color: v.$accent3;
+        @include hr-color(v.$accent3);
     }
     .hr4{
-        border-color: v.$accent4;
+        @include hr-color(v.$accent4);
+        
     }
     h3, p{
         margin: 5px;
