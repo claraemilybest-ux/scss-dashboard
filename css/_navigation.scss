@@ -6,14 +6,26 @@ nav{
   background-color: v.$secondary;
   width: 100%;
   max-width: 200px;
+
+  hr{
+    width: 100%;
+    border: none;
+    border-top: 2px solid v.$primary;
+
+  }
   .logo{
     display: flex;
     align-items: center;
     font-size: 24px;
     font-weight: bold;
     color: v.$primary-font;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
+    i{
+        color: v.$secondary-font; 
+        font-size: 14px;
+        
+    }
     img{
       width: 40px;
       height: 40px;
@@ -26,17 +38,15 @@ nav{
     margin: 20px 0;
     font-weight: 200;
   }
-  hr{
-    border: none;
-    border-top: 2px solid v.$secondary-font;
-    
-
-  }
+  
   a{
     color: v.$font3;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
     &:hover{
       background-color: v.$accent1;
