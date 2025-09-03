@@ -4,7 +4,7 @@ nav {
   padding: 15px 30px;
   background-color: #fff;
   width: 100%;
-  max-width: 200px;
+  max-width: 180px;
 }
 nav hr {
   width: 100%;
@@ -17,33 +17,33 @@ nav .logo {
   font-size: 24px;
   font-weight: bold;
   color: #20244f;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 nav .logo i {
-  color: #717374;
-  font-size: 14px;
+  display: none;
 }
 nav .logo img {
   width: 40px;
   height: 40px;
   margin-right: 10px;
 }
-nav span {
-  font-size: 14px;
-  color: #717374;
-  margin: 20px 0;
-  font-weight: 200;
-}
-nav a {
-  color: #b8b8b8;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 14px;
+nav .pages {
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 10px;
+  flex-direction: column;
 }
-nav a:hover {
+nav .pages span {
+  color: #717374;
+  font-size: 14px;
+  font-weight: 200;
+  color: #717374;
+}
+nav .pages a {
+  color: #b8b8b8;
+  font-size: 14px;
+}
+nav .pages a:hover {
   background-color: #fe9f44;
 }
 
@@ -244,9 +244,55 @@ body {
 main {
   background-color: #f0f4f8;
   padding: 20px;
-  min-height: 100vh;
+  height: 100%;
 }
 
 a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  nav {
+    max-width: 100%;
+    width: 100%;
+    flex-direction: row;
+    padding: 10px;
+  }
+  nav .logo {
+    margin-bottom: 0;
+  }
+  nav .logo i {
+    display: inline;
+    margin: 0 10px;
+  }
+  nav .pages {
+    display: none;
+  }
+  .right {
+    width: 100%;
+  }
+  header {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    height: auto;
+  }
+  .user {
+    justify-content: flex-start;
+    gap: 10px;
+    min-width: auto;
+  }
+  .balance {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bal-card, .crypto-card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .cryptos {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

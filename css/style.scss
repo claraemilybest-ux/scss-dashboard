@@ -17,9 +17,57 @@ body {
 main{
   background-color: v.$primary;
   padding: 20px;
-  min-height: 100vh;
+  height: 100%;
 }
 
 a{
   text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  nav {
+    max-width: 100%;
+    width: 100%;
+    flex-direction: row;
+    padding: 10px;
+    .logo{
+      margin-bottom: 0;
+
+      i{
+        display: inline;
+        margin: 0 10px;
+      }
+    }
+    
+    .pages{
+      display: none;
+    }
+  }
+  .right {
+    width: 100%;
+  }
+  header {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    height: auto;
+  }
+  .user {
+    justify-content: flex-start;
+    gap: 10px;
+    min-width: auto;
+  }
+  .balance {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bal-card, .crypto-card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .cryptos {
+    flex-direction: column;
+  }
+  
 }
