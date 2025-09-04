@@ -20,6 +20,7 @@ nav{
     font-weight: bold;
     color: v.$primary-font;
     margin-bottom: 20px;
+    
 
     i{
         display: none;
@@ -37,6 +38,7 @@ nav{
         gap: 10px;
         flex-direction: column;
 
+    
         
         span{
             color: v.$secondary-font; 

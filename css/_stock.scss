@@ -1,0 +1,43 @@
+@use 'index' as v;
+.stocks{
+    display: flex;
+    gap: 20px;
+}
+.stock-card{
+    width: 25%;
+    background-color: v.$secondary;
+    padding: 15px;
+    border-radius: 8px;
+    
+    h2{
+        color: v.$primary-font;
+        font-weight: normal;
+        font-size: 18px;
+        margin: 0 0 10px 0;
+
+        span{
+            color: v.$font3;
+            font-weight: 200;
+        }
+    }
+
+    h3{
+        color:v.$secondary-font;
+        font-weight:normal;
+        font-size: 15px;
+    }
+    span{
+        font-size: 14px;
+        color: v.$font3;
+    }
+    p{
+        font-size: 14px;
+        color: v.$primary-font;
+        margin: 0;
+    }
+}
+.stock-exchange{
+    background-color: v.$secondary;
+    padding: 15px;
+    border-radius: 8px;
+}
