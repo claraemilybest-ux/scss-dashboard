@@ -1,14 +1,25 @@
 @use 'index' as v;
 .stocks{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    
+    span{
+        font-size: 14px;
+        color: v.$font3;
+    }
 }
 .stock-card{
-    width: 25%;
+    width: 15%;
     background-color: v.$secondary;
     padding: 15px;
     border-radius: 8px;
     
+    img{
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 8px;
+    }
     h2{
         color: v.$primary-font;
         font-weight: normal;
@@ -20,20 +31,26 @@
             font-weight: 200;
         }
     }
+        .profit{
+            color: v.$font-profit;
+            font-size: 14px;
+        }
+        .loss{
+                color: v.$font-loss;
+                font-size: 14px;
+            }
 
     h3{
-        color:v.$secondary-font;
+        color:v.$primary-font;
         font-weight:normal;
-        font-size: 15px;
+        font-size: 18px;
+        margin: 0;
     }
-    span{
-        font-size: 14px;
-        color: v.$font3;
-    }
+    
     p{
         font-size: 14px;
         color: v.$primary-font;
-        margin: 0;
+        margin: 5px 0;
     }
 }
 .stock-exchange{
